@@ -45,9 +45,9 @@ body {
      justify-content: center;
      flex-wrap: wrap;
      margin: auto;
-     gap: 30px;
+     gap: 20px;
      width: 100%;
-
+     padding: 0px 60px;
 }
 
 .left-card {
@@ -59,6 +59,8 @@ body {
      border-radius: 10px;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
      border-top: 4px solid #45d3d3;
+     flex-grow: 1;
+     width: 30%;
 }
 
 
@@ -66,7 +68,8 @@ body {
      display: flex;
      flex-direction: column;
      gap: 30px;
-     max-width: 420px;
+     flex-grow: 1;
+     width: 30%;
 }
 
 .middle-one {
@@ -78,6 +81,8 @@ body {
      border-radius: 10px;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
      border-top: 4px solid #ea5353;
+     flex-grow: 1;
+     width: 100%;
 }
 
 .middle-two {
@@ -89,6 +94,8 @@ body {
      border-radius: 10px;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
      border-top: 4px solid #fcaf4a;
+     flex-grow: 1;
+     width: 100%;
 }
 
 .right-card {
@@ -100,7 +107,8 @@ body {
      border-radius: 10px;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
      border-top: 4px solid #549ef2;
-
+     flex-grow: 1;
+     width: 30%;
 }
 
 
@@ -136,10 +144,16 @@ img {
 
      .middle {
           flex-direction: column;
+     }
 
+     .left-card,
+     .middle,
+     .right-card {
+          width: 100%;
      }
 
      .card {
           padding: 20px;
+          flex-direction: column;
      }
 }
